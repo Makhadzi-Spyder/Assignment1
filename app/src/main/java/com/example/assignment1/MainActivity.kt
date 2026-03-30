@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //Suggest button code
+        //logic structure assisted by ChatGPT (OpenAi, 2026)
         btnSpark?.setOnClickListener {
 
               // allows the user to enter time of day without case restriction
@@ -50,6 +51,8 @@ class MainActivity : AppCompatActivity() {
             var message: String
 
             //if statement to output message according to user input
+            //Assisted through W3Schools Kotlin Conditions tutorial
+            //https://www.w3schools.com/kotlin/kotlin_conditions.php
             if (time == "morning") {
                 message = "Send a good morning text to your partner"
                 Log.d("MainActivity","Morning selected")
@@ -63,7 +66,9 @@ class MainActivity : AppCompatActivity() {
                 Log.d("MainActivity", "Night selected")
 
             } else {
-                //If no valid input was given by user
+                //If no valid input was given, shows pop-up to prompt user
+                //from Android Developers (2024) Toast documentation
+                //https://developer.android.com/guide/topics/ui/notifiers/toasts
                 Toast.makeText(
                     this@MainActivity,
                     "Please enter a valid time of day",

@@ -3,7 +3,7 @@
 # Time-Based Social Interaction Suggestion App
 
 ## Github Repository
-
+https://github.com/EMWCCN/emwccn-imad5112-2026-assignment-1-Makhadzi-Spyder
 
 ## Description
 This app suggestions various text messages and social interactions a person can have based on the time of the day

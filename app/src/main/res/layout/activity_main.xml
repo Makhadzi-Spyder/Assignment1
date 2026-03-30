@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F26595"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="cursive"
+        android:text="@string/welcome_sparkling"
+        android:textColor="#090909"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtChat"
+        android:layout_width="337dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/it_can_be_hard_always_knowing_what_to_say_are_you_ready_to_get_your_daily_sparks"
+        android:textAlignment="center"
+        android:textColor="#3E2723"
+        app:layout_constraintBottom_toTopOf="@+id/edtTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtSpark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtChat"
+        tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtSpark"
+        android:layout_width="307dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="43dp"
+        android:text="@string/sparks"
+        android:textColor="#3E2723"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTime"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSpark"
+        app:layout_constraintVertical_bias="0.763"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSpark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="96dp"
+        android:text="Spark Me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSpark"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

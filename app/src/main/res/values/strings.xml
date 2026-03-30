@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="welcome_sparkling">Welcome Sparkling!</string>
+    <string name="it_can_be_hard_always_knowing_what_to_say_are_you_ready_to_get_your_daily_sparks">It_can_be_hard_always_knowing_what_to_say_are_you_ready_to_get_your_daily_sparks</string>
+    <string name="reset">Reset</string>
+    <string name="spark_me">Spark Me</string>
+    <string name="sparks">Sparks:</string>
+</resources>

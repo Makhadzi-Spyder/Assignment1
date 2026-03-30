@@ -40,13 +40,16 @@ class MainActivity : AppCompatActivity() {
         //Suggest button code
         btnSpark?.setOnClickListener {
 
+              // allows the user to enter time of day without case restriction
             val time = edtTime.text.toString().lowercase()
 
             Log.d("MainActivity","Suggested spark button clicked")
             Log.d("MainActivity","User input: $time")
 
+           //stores the message user gets back
             var message: String
 
+            //if statement to output message according to user input
             if (time == "morning") {
                 message = "Send a good morning text to your partner"
                 Log.d("MainActivity","Morning selected")
@@ -69,6 +72,7 @@ class MainActivity : AppCompatActivity() {
 
 
             }
+            //Displays message in the textview for user
             txtSpark.text = greeting+ "\n\n" +message
         }
 

@@ -21,6 +21,17 @@ class MainActivity : AppCompatActivity() {
         val txtSpark = findViewById<TextView>(R.id.txtSpark)
         val btnSpark = findViewById<Button>(R.id.btnSpark)
 
+        //variables to use in other parts of the code
+        val greeting = "Your Spark Of The Day Is:"
+
+         //reset button code
+        btnReset?.setOnClickListener {
+
+            txtSpark.text = greeting      //Clears the suggested sparks
+
+            edtTime.text.clear()     //Clears the user's input
+        }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
